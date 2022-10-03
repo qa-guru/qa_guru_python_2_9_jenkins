@@ -1,0 +1,17 @@
+5647262179:AAFzUwfCKaiZEJcv-XAa2J28Cx7o16nZDI0
+-1001576227336
+
+https://api.telegram.org/bot5647262179:AAFzUwfCKaiZEJcv-XAa2J28Cx7o16nZDI0/getUpdates
+
+chrome://extensions/ -> JSONVue
+https://chrome.google.com/webstore/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc?hl=ru
+
+
+curl -X POST \
+     -H 'Content-Type: application/json' \
+     -d '{"chat_id": "-1001576227336", "text": "This is a test from qa.guru", "disable_notification": true}' \
+     https://api.telegram.org/bot5647262179:AAFzUwfCKaiZEJcv-XAa2J28Cx7o16nZDI0/sendMessage
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001576227336", "text": "This is a test from qa.guru", "disable_notification": true}' https://api.telegram.org/bot5647262179:AAFzUwfCKaiZEJcv-XAa2J28Cx7o16nZDI0/sendMessage
+
+
+java "-DconfigFile=notifications/telegram-config.json" -jar notifications/allure-notifications-4.2.1.jar
